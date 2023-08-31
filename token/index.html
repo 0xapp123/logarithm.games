@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>Logarithm Games / Blockchain political games</title>
+    <meta name='description' content='Mobile Political Games Developer. LOGG Token. '>
+    <meta name="Keywords" content="Logarithm Games, Mobile political game, poitical token, logg token, logg, putout, lugabe, kimwall"> 
+    <meta id="viewport" name="viewport" content="width=device-width,user-scalable=0">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" type="text/css" href="../css/token.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="../css/connect.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LOGARITHM">
+    <meta property="og:title" content="LOGARITHM">
+    <meta property="og:description" content="LOGARITHM">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="ru_RU">
+
+    <script>
+        function vprt() { var t = document.getElementById("viewport"), e = screen.width, i = screen.height, r = "content", s = "user-scalable=0", n = "width="; e < 1100 ? e < 480 ? i < e ? t.setAttribute(r, n + "768," + s) : t.setAttribute(r, n + "360," + s) : i < e ? t.setAttribute(r, n + "1024," + s) : t.setAttribute(r, n + "768," + s) : t.setAttribute(r, n + "device-width," + s), window.addEventListener("resize", function () { e = screen.width, i = screen.height, e < 1100 ? e < 480 ? i < e ? t.setAttribute(r, n + "768," + s) : t.setAttribute(r, n + "360," + s) : i < e ? t.setAttribute(r, n + "1024," + s) : t.setAttribute(r, n + "768," + s) : t.setAttribute(r, n + "device-width," + s) }) } vprt();
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+	<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BK822FZBJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6BK822FZBJ');
+    </script>
+</head>
+
+<body>
+
+			   
+
+										 
+
+							   
+										  
+								 
+										 
+			  
+										   
+			  
+
+    <!--HEADER-->
+
+    <div id="header" class="header default row">
+        <div class="header-wrap">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="/" class="logo">
+                        <img src="../img/logo.png" alt="Logarithm logotype">
+                    </a>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="https://logarithm.games/#about" class="menu-item anim_to">About</a></li>
+                            <li><a href="https://logarithm.games/#dao" class="menu-item anim_to">DAO</a></li>
+                            <li><a href="https://logarithm.games/#road-map" class="menu-item anim_to">Road Map</a></li>
+                            <li><a href="https://logarithm.games/#marketplace" class="menu-item anim_to">Market</a></li>
+                            <li><a href="https://logarithm.games/#games" class="menu-item anim_to">Games</a></li>
+                            <li><a href="#whitepaper" class="menu-item" data-fancybox>WhitePaper</a></li>
+                            <li><a href="https://logarithm.games/#staking" class="menu-item anim_to">Staking</a></li>
+                            <!-- <li><a href="#congrats" class="menu-item anim_to item-buy" data-fancybox>BuyToken</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="header-btn-wrap">
+                        <a href="#" class="main-btn connect_wallet_">CONNECТ WALLET</a>
+                    </div>
+                    <div class="mobile-btn"><img src="../img/mobile-btn.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-numbers">
+                <div class="header-numbers-item">6.000+<span>members</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!--MOBILE-->
+
+    <div class="mobile default">
+        <div class="mobile_overlay"></div>
+        <div class="overlay">
+            <div class="btn-close">
+                <img src="../img/close-mob.svg" alt="">
+            </div>
+            <div class="mobile-wrap">
+                <div class="mobile-menu">
+                    <div class="logo-mob">
+                        <a href="/" class="logo"><img src="../img/logo.png" alt=""></a>
+                    </div>
+                    <div class="mobile-menu-wrap">
+                        <div class="mobile-menu">
+                            <ul>
+                                <li><a href="https://logarithm.games/#about" class="menu-item anim_to">About</a></li>
+                                <li><a href="https://logarithm.games/#dao" class="menu-item anim_to">DAO</a></li>
+                                <li><a href="https://logarithm.games/#road-map" class="menu-item anim_to">Road Map</a></li>
+                                <li><a href="https://logarithm.games/#marketplace" class="menu-item anim_to">Market</a></li>
+                                <li><a href="https://logarithm.games/#games" class="menu-item anim_to">Games</a></li>
+                                <li><a href="#whitepaper" class="menu-item" data-fancybox>WhitePaper</a></li>
+                                <li><a href="https://logarithm.games/#staking" class="menu-item anim_to">Staking</a></li>
+                                <!-- <li><a href="https://logarithm.games/#banner" class="menu-item anim_to item-buy">BuyToken</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-mob-btn-wrap">
+                        <a href="#" class="main-btn connect_wallet_">CONNECТ WALLET</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TOKEN-HEADER-->
+
+    <div class="token-header row">
+        <div class="token-header-title">LOGG-TOKEN</div>
+        <!-- <div class="token-header-subtitle">Stablecoin secured by land and real estate</div> -->
+    </div>
+
+    <!--TOKEN-ITEMS-->
+
+    <div class="token-page-items-wrap row">
+        <div class="token-page-items">
+            <div class="token-page-items-title">What can I do with LOGG-token?</div>
+            <div class="token-page-items-inner">
+                <div class="token-page-item"><span>This token acts as the base currency for <br>the purchase of items (NFT) for each <br>of our games</span></div>
+                <div class="token-page-item"><span>The token will act as a means of payment <br>for purchasing (instantly upgrading <br>items in the games</span></div>
+                <div class="token-page-item"><span>The token will act as a link between <br>USDT and the in-game token</span></div>
+                <div class="token-page-item"><span>Each participant may put any amount of <br>tokens into the pool for 1/3/6 months and <br>receive dividends from each <br>transaction in the network</span></div>
+            </div>
+            <div class="token-page-logo"><img src="../img/token-page-logo.png" alt=""></div>
+        </div>
+    </div>
+
+    <!--TOKEN-FORM-->
+
+    <div class="token-form-wrap row">
+        <div id="token-form" class="token-form">
+            <div class="token-form-title">Buy LOGG-token</div>
+											  
+																						  
+															
+					  
+																						 
+            <div class="token-form-item">
+                <input type="text" class="token-form-input" placeholder="0" name="log-token" id="log-token">
+                <div class="token-form-item-text">logg-token</div>
+            </div>
+            <div class="token-form-item token-form-info">
+                <div class="token-score token-price-auth"><span>Аvailable:</span> <span class="dropcount">?</span></div>
+                <div class="token-score token-price-noauth"><span>Аvailable:</span> <a href="#token-price-noauth" data-fancybox><img src="../img/question.svg" alt=""></a></div>
+                <div class="token-price token-price-auth"><span>1 LOGG-Token</span> = <span class="token_price">?</span> BNB</div>
+                <div class="token-price token-price-noauth"><span>1 LOGG-Token</span> = <a href="#token-price-noauth" data-fancybox><img src="../img/question.svg" alt=""></a></div>
+            </div>
+            <div class="token-form-btn-wrap">
+                <div class="token-form-btn-inner">
+                    <button type="buttom" class="token-form-btn buy_token">Buy LOGG token</button>
+                </div>
+            </div>
+            <div class="token-form-bot">
+                <div class="token-form-bot-item">Players receive a single in-game token for in-game activity in any company projects, which they will be able to exchange for the company's main single token with the possibility of further placement on exchanges where the LOGG-token will be listed</div>
+																														   
+										 
+																													   
+										
+																													   
+										 
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <div class="footer row">
+        <div class="footer-inner">
+            <div class="footer-bot">
+                <div class="footer-menu">
+                    <a href="https://logarithm.games/#about" class="footer-menu-item anim_to">About</a>
+                    <a href="https://logarithm.games/#dao" class="footer-menu-item amin_to">DAO</a>
+                    <a href="https://logarithm.games/#road-map" class="footer-menu-item anim_to">Road Map</a>
+                    <a href="https://logarithm.games/#marketplace" class="footer-menu-item anim_to">Market</a>
+                    <a href="https://logarithm.games/#games" class="footer-menu-item anim_to">Games</a>
+                    <a href="#whitepaper" class="footer-menu-item" data-fancybox>WhitePaper</a>
+                    <a href="https://logarithm.games/#staking" class="footer-menu-item anim_to">Staking</a>
+                    <!-- <a href="/token.html" class="footer-menu-item">BuyToken</a> -->
+                </div>
+                <div class="footer-soc">
+                    <a class="footer-soc-item" href="https://discord.gg/7y2C3P7Jny" target="_blank"><img src="../img/footer-soc-icon-1.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://instagram.com/Logarithm.Games" target="_blank"><img src="../img/footer-soc-icon-2.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://twitter.com/LogarithmGames" target="_blank"><img src="../img/footer-soc-icon-3.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://www.youtube.com/channel/UCORrjgc80PvLjYdavKB7Ktw" target="_blank"><img src="../img/footer-soc-icon-4.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://facebook.com/profile.php?id=100086565892152" target="_blank"><img src="../img/footer-soc-icon-5.png" alt=""></a>
+                </div>
+                <div class="footer-copy">© 2023 LOGARITHM PTE. LTD. Singapore.  All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="connect-popup">
+        <a class="connect-popup-item connect_mm">
+            <span>MetaMask</span>
+            <img src="../img/metamask.svg" alt="">
+        </a>
+        <a class="connect-popup-item connect_cw">
+            <span>WalletConnect</span>
+
+            <img src="../img/walletconnect.svg" alt="">
+        </a>
+        <a class="connect-popup-item inactive">
+            <span>WalletLink</span>
+            <img src="../img/coinbase.svg" alt="">
+        </a>
+        <a href="https://metamask.io/download/" class="dont-wallet">Don't have a wallet?</a>
+    </div>
+
+    <div id="whitepaper" class="whitepaper">
+        <div class="whitepaper-wrap">
+            <div class="whitepaper-inner">
+                <div class="whitepaper-title">White Paper</div>
+                <div class="whitepaper-items">
+                    <a href="https://logarithm.games/whitepaper_en.pdf" class="whitepaper-item" target="_blank" download>ENG</a>
+                    <a href="https://logarithm.games/whitepaper_es.pdf" class="whitepaper-item" target="_blank" download>ESP</a>
+                    <a href="https://logarithm.games/whitepaper_cn.pdf" class="whitepaper-item" target="_blank" download>CHN</a>
+                    <a href="https://logarithm.games/whitepaper_ru.pdf" class="whitepaper-item" target="_blank" download>RUS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="token-price-noauth" class="whitepaper">
+        <div class="whitepaper-wrap">
+            <div class="whitepaper-inner">
+                Please <br>connect wallet
+            </div>
+        </div>
+    </div>
+
+    <div id="congrats" class="congrats comming-soon pop-up whitepaper">
+        <div class="whitepaper-wrap comming-soon-wrap">
+            <div class="whitepaper-inner">
+                <div class="whitepaper-title">Сongratulations!<br><span>Keep in touch We will inform you about all news and events of our company.</span></div>
+            </div>
+            <div class="pop-up-form-wrap">
+                <form action="../mail.php" method="POST" class="pop-up-form" id="cb-form">
+                    <input class="pop-up-input-hidden" type="hidden" name="formname" value="Форма успешной покупки токена">
+                    <div class="pop-up-form-item">
+                        <input type="email" name="email" placeholder="E-mail" class="pop-up-form-input">
+                    </div>
+                    <div class="pop-up-form-btn-wrap">
+                        <div class="pop-up-form-btn-inner">
+                            <button type="submit" class="pop-up-form-btn">Send</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="pop-up-form-soc">
+                    <a class="footer-soc-item" href="https://discord.gg/7y2C3P7Jny" target="_blank"><img src="../img/footer-soc-icon-1.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://instagram.com/Logarithm.Games" target="_blank"><img src="../img/footer-soc-icon-2.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://twitter.com/LogarithmGames" target="_blank"><img src="../img/footer-soc-icon-3.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://www.youtube.com/channel/UCORrjgc80PvLjYdavKB7Ktw" target="_blank"><img src="../img/footer-soc-icon-4.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://facebook.com/profile.php?id=100086565892152" target="_blank"><img src="../img/footer-soc-icon-5.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="thanx" class="thanx">
+            <svg viewBox="0 0 100 100" class="animate">
+                      <filter id="dropshadow" height="100%">
+                        <!--<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>-->
+                        <!--<feFlood flood-color="#C0646C" flood-opacity="0.5" result="color"/>-->
+                        <!--<feComposite in="color" in2="blur" operator="in" result="blur"/>-->
+                        <feMerge> 
+                          <feMergeNode></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                      </filter>
+                      <circle cx="50" cy="50" r="46.5" fill="none" stroke="rgba(0, 128, 0, 0.5)" stroke-width="5"></circle>
+                      <path d="M67,93 A46.5,46.5 0,1,0 7,32 L43,67 L88,19" fill="none" stroke="green" stroke-width="5" stroke-linecap="round" stroke-dasharray="80 1000" stroke-dashoffset="-220" style="filter:url(#dropshadow)"></path>
+            </svg>
+            <div class="thanx-text">Thanks!</div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+											  
+
+    <script src="../js/newsm.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".mobile-btn").click(function () {
+                $(".mobile").fadeToggle(200);
+            });
+        });
+        $('.mobile_overlay, .overlay').on('click', function () {
+            $(".mobile").fadeToggle(200);
+        });
+
+        $(document).ready(function () {
+            var this1 = $(this);
+            //var form_data = $(this).serialize();
+            var $callback = $(".comming-soon-wrap");
+            var $thanx = $(".thanx");
+            $("#cb-form").validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    email: {
+                        required: "Enter email",
+                        email: "Incorrect email"
+                    }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        //data: form_data,
+                        data: $('#cb-form').serialize(),
+                        success: function () {
+                            $callback.hide();
+                            $thanx.show();
+                            $('#cb-form')[0].reset();
+                            setTimeout(function () {
+                                $.fancybox.close();
+                            }, 3000);
+                            setTimeout(function () {
+                                $callback.show();
+                                $thanx.hide();
+                            }, 3300);
+                        }
+                    });
+                    return false;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

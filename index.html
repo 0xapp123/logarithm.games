@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>Logarithm Games / Blockchain political games</title>
+    <meta name='description' content='Mobile Political Games Developer. LOGG Token. '>
+    <meta name="Keywords" content="Logarithm Games, Mobile political game, poitical token, logg token, logg, putout, lugabe, kimwall"> 
+    <meta id="viewport" name="viewport" content="width=device-width,user-scalable=0,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/connect.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LOGARITHM">
+    <meta property="og:title" content="LOGARITHM">
+    <meta property="og:description" content="LOGARITHM">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="ru_RU">
+
+    <script>
+        function vprt(){var t=document.getElementById("viewport"),e=screen.width,i=screen.height,r="content",s="user-scalable=0",n="width=";e<1100?e<480?i<e?t.setAttribute(r,n+"768,"+s):t.setAttribute(r,n+"360,"+s):i<e?t.setAttribute(r,n+"1024,"+s):t.setAttribute(r,n+"768,"+s):t.setAttribute(r,n+"device-width,"+s),window.addEventListener("resize",function(){e=screen.width,i=screen.height,e<1100?e<480?i<e?t.setAttribute(r,n+"768,"+s):t.setAttribute(r,n+"360,"+s):i<e?t.setAttribute(r,n+"1024,"+s):t.setAttribute(r,n+"768,"+s):t.setAttribute(r,n+"device-width,"+s)})}vprt();
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BK822FZBJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6BK822FZBJ');
+    </script>
+</head>
+
+<body>
+
+    <!--GATE-->
+
+    <div class="gate-overlay"></div>
+
+    <div class="gate-wrap row">
+        <div class="gate-left gate"></div>
+        <div class="gate-center">
+            <div class="gate-logo"></div>
+        </div>
+        <div class="gate-right gate"></div>
+    </div>
+
+    <!--HEADER-->
+
+    <div id="header" class="header default row">
+        <div class="header-wrap">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="/" class="logo">
+                        <img src="img/logo.png" alt="Logarithm logotype">
+                    </a>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#about" class="menu-item anim_to">About</a></li>
+                            <li><a href="#dao" class="menu-item anim_to">DAO</a></li>
+                            <li><a href="#road-map" class="menu-item anim_to">Road Map</a></li>
+                            <li><a href="#marketplace" class="menu-item anim_to">Market</a></li>
+                            <li><a href="#games" class="menu-item anim_to">Games</a></li>
+                            <li><a href="#whitepaper" class="menu-item" data-fancybox>WhitePaper</a></li>
+                            <li><a href="#staking" class="menu-item anim_to">Staking</a></li>
+							<li><a href="token/" class="menu-item">BuyToken</a></li>
+                            <!--<li><a href="#comming-soon" class="menu-item" data-fancybox>BuyToken</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="header-btn-wrap">
+                        <a href="#" class="main-btn connect_wallet_">CONNECТ WALLET</a>
+                    </div>
+                    <div class="mobile-btn"><img src="img/mobile-btn.svg" alt=""></div>
+                </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="header-numbers">
+                <div class="header-numbers-item"><div id="count" class="countdownHolder">
+                        <span class="countDays countWrap">
+                            <span class="position">
+                                <span class="digit static"></span>
+                            </span>
+                            <span class="position">
+                                <span class="digit static"></span>
+                            </span>
+                        </span>
+                        <span class="header-days">Days</span>
+                    </div>
+                    <span>Before PUT OUT <br>Beta Launch</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MOBILE-->
+
+    <div class="mobile default">
+        <div class="mobile_overlay"></div>
+        <div class="overlay">
+            <div class="btn-close">
+                <img src="img/close-mob.svg" alt="">
+            </div>
+            <div class="mobile-wrap">
+                <div class="mobile-menu">
+                    <div class="logo-mob">
+                        <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="mobile-menu-wrap">
+                        <div class="mobile-menu">
+                            <ul>
+                                <li><a href="#about" class="menu-item anim_to">About</a></li>
+                                <li><a href="#dao" class="menu-item anim_to">DAO</a></li>
+                                <li><a href="#road-map" class="menu-item anim_to">Road Map</a></li>
+                                <li><a href="#marketplace" class="menu-item anim_to">Market</a></li>
+                                <li><a href="#games" class="menu-item anim_to">Games</a></li>
+                                <li><a href="#whitepaper" class="menu-item" data-fancybox>WhitePaper</a></li>
+                                <li><a href="#staking" class="menu-item anim_to">Staking</a></li>
+                                <li><a href="token/" class="menu-item">BuyToken</a></li>
+								<!--<li><a href="#comming-soon" class="menu-item" data-fancybox>BuyToken</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-mob-btn-wrap">
+                        <a href="#" class="main-btn connect_wallet_">CONNECТ WALLET</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--BANNER-->
+
+    <div id="banner" class="banner row">
+        <div class="banner-space">
+            <div id="particles-js"></div>
+        </div>
+        <div class="banner-mars"></div>
+        <div class="banner-main">
+            <img src="img/bg-main.png" alt="">
+        </div>
+        <div class="banner-bottom"></div>
+        <div class="banner-ill"></div>
+        <div class="container">
+            <div class="banner-btn-wrap">
+                <img class="bg-btn" src="img/bg-btn.png" alt="">
+                <!--<a href="#comming-soon" class="main-btn banner-btn" data-fancybox>BUY LOGG TOKEN</a>-->
+				<a href="token/" class="main-btn banner-btn">BUY LOGG TOKEN</a>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT-->
+
+    <div id="about" class="about row">
+        <div class="about-inner">
+            <div class="about-light about-light-left"><img src="img/about-light-left.png" alt=""></div>
+            <div class="about-light about-light-right"><img src="img/about-light-right.png" alt=""></div>
+            <div class="about-title">WHAT IS LOGARITHM GAMES</div>
+            <div class="about-text">The developer of the first political mobile and computer games based on the <br>play and watch-to earn method with the opportunity to earn the company's <br>main token - LOGG Token, the first multiplier of games <br>with visual integration of ad units</div>
+            <div class="about-items-wrap">
+                <div class="about-items about-items-left">
+                    <div class="about-item">
+                        <div class="about-item-line"></div>
+                        <div class="about-item-text">Play our games and earn money</div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-item-line"></div>
+                        <div class="about-item-text">Buy, sell, rent or lease NFT in a single <br>distribution system for all meta objects <br>of the company</div>
+                    </div>
+                </div>
+                <div class="about-items about-items-right">
+                    <div class="about-item">
+                        <div class="about-item-line"></div>
+                        <div class="about-item-text">Become a member of the company's DAO by <br>purchasing a token and participate in voting in all <br>projects of LOGARITM GAMES</div>
+                    </div>
+                    <div class="about-item about-item-img">
+                        <img src="img/about-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TOKENS-->
+
+    <div id="staking" class="tokens row">
+        <div class="tokens-wrap">
+            <div class="tokens-bg-top"></div>
+            <div class="container">
+                <div class="tokens-title">REWARDS BY STAKING LOGG TOKENS</div>
+                <div class="tokens-items">
+                    <div class="token-item token-item-1">
+                        <div class="token-item-title">LEVEL 1</div>
+                        <div class="token-item-text">Participate in token staking and earn real money</div>
+                        <div class="token-item-num">+240% APR</div>
+                    </div>
+                    <div class="token-item token-item-2">
+                        <div class="token-item-title">LEVEL 2</div>
+                        <div class="token-item-text">Soon</div>
+                        <div class="token-item-num">---</div>
+                    </div>
+                    <div class="token-item token-item-3">
+                        <div class="token-item-title">LEVEL 3</div>
+                        <div class="token-item-text">Soon</div>
+                        <div class="token-item-num">---</div>
+                    </div>
+                </div>
+                <div class="tokens-text">Participate in the staking of the LOGG-token for all sales characteristics, <br>we will extract additional information about the conditions of staking <br>and the opportunity to increase your capital later</div>
+            </div>
+            <div class="tokens-bg-bot"></div>
+        </div>
+    </div>
+
+    <!--DAO-->
+
+    <div id="dao" class="dao row">
+        <div class="dao-wrap">
+            <div class="dao-bg-top"></div>
+            <div class="dao-text">Any member of our gaming community, investor, DAO member, can <br>submit proposals through the LOGARITHM website through the ecosystem <br>to cast their vote. Decisions are made by majority vote and implemented <br>through a distributed system. LOGG tokens can be provided as a reward to <br>DAO participants who make winning proposals to implement the DAO. <br>More information will be published on the official website in the coming <br>weeks.</div>
+            <div class="dao-btn-wrap">
+                <!--<a href="#comming-soon" class="dao-btn" data-fancybox>DAO</a>-->
+				<a href="token/" class="dao-btn">DAO</a>
+            </div>
+            <div class="dao-bg-bot"></div>
+        </div>
+    </div>
+    
+    <!--INFO-->
+
+    <div class="info row">
+        <div class="info-wrap">
+            <div class="container">
+                <div class="info-title">INFORMATION</div>
+                <div class="info-inner">
+                    <div class="info-text">
+                        <div class="info-text-sm">6.000+ <span>members</span></div>
+                        <div class="info-text-md">21 days <span>before distribution of Secret Х-box</span></div>
+                        <div class="info-text-bg">11 Days <span>Put Out Beta Launch</span></div>
+                    </div>
+                    <div class="info-img"><img src="img/info-img.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--NEWS-->
+
+    <div class="news row">
+        <div class="news-wrap">
+            <div class="container">
+                <div class="news-title-wrap">
+                    <div class="news-title">LOGG NEWS</div>
+                    <div class="news-links">
+                        <a href="https://facebook.com/profile.php?id=100086565892152" target="_blank">FACEBOOK</a>
+                        <a href="https://www.youtube.com/channel/UCORrjgc80PvLjYdavKB7Ktw" target="_blank">YOUTUBE</a>
+                        <a href="https://twitter.com/LogarithmGames" target="_blank">TWITTER</a>
+                    </div>
+                </div>
+                <div class="news-list">
+                    <a href="javascript:void(0);" class="news-item">
+                        <object>
+                            <div class="news-item-preview" style="background-image: url(img/log-new-3.jpeg);">
+                                <div class="news-item-preview-title"></div>
+                                <div class="news-item-preview-subtitle"></div>
+                            </div>
+                            <div class="news-item-date">07.11.2022</div>
+                            <div class="news-item-title">First limited collection sales of NFT "AVATAR: HELMET" will start soon, its owners can use NFT as avatar in game and will have the opportunity for automatically win the Secret X-box in the BETA-version of the PUT OUT.</div>
+                        </object>
+                    </a>
+                    <a href="https://putout.io/" class="news-item" target="_blank">
+                        <object>
+                            <div class="news-item-preview" style="background-image: url(img/log-new-2.jpeg);">
+                                <div class="news-item-preview-title">Project PUT OUT</div>
+                                <div class="news-item-preview-subtitle">site launched!</div>
+                            </div>
+                            <div class="news-item-date">06.11.2022</div>
+                            <div class="news-item-title">You can find all the information about the project and participation in it at the link: <a href="https://putout.io/" target="_blank">putout.io</a></div>
+                        </object>
+                    </a>
+                    <a href="javascript:void(0);" class="news-item">
+                        <object>
+                            <div class="news-item-preview" style="background-image: url(img/log-new-1.jpeg);">
+                                <div class="news-item-preview-title"></div>
+                                <div class="news-item-preview-subtitle"></div>
+                            </div>
+                            <div class="news-item-date">07.11.2022</div>
+                            <div class="news-item-title">Start a closed sale of LOGG-Token, you can buy it on the site, according to the % of the purchase of the token, you will have a share in the DAO</div>
+                        </object>
+                    </a>
+                </div>
+            </div>
+            <div class="new-bg-bot"></div>
+        </div>
+    </div>
+
+    <!--LOGO-TOKEN-->
+
+    <div class="logo-token row">
+        <div class="logo-token-inner-wrap">
+            <div class="container">
+                <div class="logo-token-inner">
+                    <div class="logo-token-text-wrap">
+                        <div class="logo-token-title">LOGG TOKEN</div>
+                        <div class="logo-token-subtitle">The Platform token performs a utilitarian function</div>
+                        <div class="logo-token-list">
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">This token acts as the base currency for the <br>purchase of items (NFT) for each of our games</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">The token acts as a means of payment for purchasing <br>(instantly upgrading items in the games</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">The token acts as a means of payment for temporarily <br>renting items (Customers will be able to rent any <br>object the vendor puts up for the duration of n)</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">In some of the games, the user will have <br>the opportunity to improve their items <br>by crossing, this operation is paid by LOGG-Token</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">Each participant may put any amount of tokens into <br>the pool for 1/3/6 months and receive dividends <br>from each transaction in the network</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">This token is used for all operations in the ecosystem</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">It is possible to earn this token using the stacking model <br>In-game token purchase/sale</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">Payment for commercial offers</div>
+                            </div>
+                            <div class="logo-token-item">
+                                <div class="logo-token-icon"><img src="img/logo-token-icon.svg" alt=""></div>
+                                <div class="logo-token-text">Payment of commission</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-token-img"><img src="img/logo-token-img.png" alt=""></div>
+        </div>
+    </div>
+
+    <!--ROAD-MAP-->
+
+    <div id="road-map" class="road-map row">
+        <div class="road-map-inner">
+            <div class="road-map-top"></div>
+            <div class="road-map-bg-top"></div>
+            <div class="road-map-title">ROAD MAP</div>
+            <div class="road-map-slider-wrap">
+                <div class="road-map-slider">
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">4Q 2022</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Presentation PUT OUT</div>
+                            <div class="road-map-slide-item">Closed stage sale token</div>
+                            <div class="road-map-slide-item">Team onboarding</div>
+                            <div class="road-map-slide-item">Creation of an offer of personal visual game integrations for large companies</div>
+                            <div class="road-map-slide-item">Launch BETA- version of first level of the mobile game PUT OUT</div>
+                            <div class="road-map-slide-item">NFT marketplace, first NFT's collection sale</div>
+                        </div>
+                    </div>
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">4Q 2022</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Partner programs launch</div>
+                            <div class="road-map-slide-item">Development of mobile versions of LUGABE and KIM WALL games</div>
+                            <div class="road-map-slide-item">Game mobile test version on Google Play Market and Apрstore placement</div>
+                            <div class="road-map-slide-item">Preparation for the launch and testing of the referrals programs</div>
+                            <div class="road-map-slide-item">Launch DAO LOGARITHM GAMES</div>
+                        </div>
+                    </div>
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">1Q 2023</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Private 1 sale LOGG-token</div>
+                            <div class="road-map-slide-item">Secret X-box distribution among NFT owners</div>
+                            <div class="road-map-slide-item">Holding tournaments in the game PUT OUT</div>
+                            <div class="road-map-slide-item">Launch 5 new game levels of PUT OUT</div>
+                            <div class="road-map-slide-item">Launch Beta-version of new game LUGABE, cartoon presentation</div>
+                            <div class="road-map-slide-item">ICO Launchpad</div>
+                        </div>
+                    </div>
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">1Q 2023</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Presentation of KIM WALL running</div>
+                            <div class="road-map-slide-item">Testing stored levels and achievements via NFT</div>
+                            <div class="road-map-slide-item">Automated LOGG-token distribution and payouts</div>
+                            <div class="road-map-slide-item">Starting class champion and officer structure, incentives operational</div>
+                            <div class="road-map-slide-item">Theoretical first project SUBDAO proposal, development voting mechanisms</div>
+                        </div>
+                    </div>
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">2Q 2023</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Listing LOGG-token</div>
+                            <div class="road-map-slide-item">Launch Beta-version of KIM WALL running</div>
+                            <div class="road-map-slide-item">Holding tournaments in LUGABE game</div>
+                            <div class="road-map-slide-item">Development of a single ecosystem of all projects with native in-game tokens and the ability to transfer and exchange NFTs between games LOGARITHM GAMES</div>
+                        </div>
+                    </div>
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">2Q 2023</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Work on the creation of a function of various forms of lending in order to purchase NFTs</div>
+                            <div class="road-map-slide-item">Launch of new levels of the arcade part of walking through the bunker in PUT OUT based on real events</div>
+                            <div class="road-map-slide-item">Team expansion, search for new partners</div>
+                        </div>
+                    </div>
+                    <div class="road-map-slide">
+                        <div class="road-map-slide-title">2Q 2023</div>
+                        <div class="road-map-slide-body">
+                            <div class="road-map-slide-item">Games mobile test version on Google Play Market and Apрstore placement (LUGABE and KIM WALL)</div>
+                            <div class="road-map-slide-item">Further decentralize voting power in DAO of LOGARITHM GAMES</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="road-map-bg-bot"></div>
+            <div class="road-map-bot"></div>
+        </div>
+    </div>
+
+    <!--MARKETPLACE-->
+
+    <div id="marketplace" class="marketplace row">
+        <div class="marketplace-wrap">
+            <div class="container">
+                <div class="marketplace-title">MARKETPLACE ITEM</div>
+                <div class="marketplace-inner">
+                    <a href="#comming-soon" class="marketplace-item marketplace-item-1" data-fancybox>
+                        <object>
+                            <div class="marketplace-item-bg"><img src="img/marketplace-item-1-bg.png" alt=""></div>
+                            <div class="marketplace-item-down"><img src="img/marketplace-item-down.png" alt=""></div>
+                            <div class="marketplace-item-preview" style="background-image: url(img/market-1.jpeg);"></div>
+                            <div class="marketplace-item-text">
+                                <div class="marketplace-item-title">HELMET: AVATARS</div>
+                                <div class="marketplace-item-subtitle">10 days before NFT <br>limited edition</div>
+                            </div>
+                        </object>
+                    </a>
+                    <a href="#comming-soon" class="marketplace-item marketplace-item-2" data-fancybox>
+                        <object>
+                            <div class="marketplace-item-bg"><img src="img/marketplace-item-2-bg.png" alt=""></div>
+                            <div class="marketplace-item-down"><img src="img/marketplace-item-down.png" alt=""></div>
+                            <div class="marketplace-item-preview" style="background-image: url(img/market-2.jpeg);"></div>
+                            <div class="marketplace-item-text">
+                                <div class="marketplace-item-title">weapons</div>
+                                <div class="marketplace-item-subtitle">sale coming <br><span>SOON</span></div>
+                            </div>
+                        </object>
+                    </a>
+                    <a href="#comming-soon" class="marketplace-item marketplace-item-3" data-fancybox>
+                        <object>
+                            <div class="marketplace-item-bg"><img src="img/marketplace-item-3-bg.png" alt=""></div>
+                            <div class="marketplace-item-down"><img src="img/marketplace-item-down.png" alt=""></div>
+                            <div class="marketplace-item-preview" style="background-image: url(img/market-3.jpeg);"></div>
+                            <div class="marketplace-item-text">
+                                <div class="marketplace-item-title">HEROES</div>
+                                <div class="marketplace-item-subtitle">sale coming <br><span>SOON</span></div>
+                            </div>
+                        </object>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--GAMES-->
+
+    <div id="games" class="games row">
+        <div class="games-bg-top"></div>
+        <div class="container">
+            <div class="games-title">GAMES BY LOGARITHM</div>
+            <div class="games-icon-wrap">
+                <div class="games-icon games-icon-left"><img src="img/games-icon-left.png" alt=""></div>
+                <div class="games-icon games-icon-right"><img src="img/games-icon-right.png" alt=""></div>
+            </div>
+            <div class="games-inner">
+                <a href="https://putout.io" class="games-item games-item-hover" target="_blank">
+                    <object>
+                        <div class="games-item-preview" style="background-image: url(img/game-2.jpeg);"></div>
+                        <div class="games-btn">PUT OUT</div>
+                    </object>
+                </a>
+                <a href="https://lugabe.io" class="games-item" target="_blank">
+                    <object>
+                        <div class="games-item-preview" style="background-image: url(img/game-1.jpeg);"></div>
+                        <div class="games-btn">LUGABE</div>
+                    </object>
+                </a>
+                <a href="https://kimwall.io" class="games-item" target="_blank">
+                    <object>
+                        <div class="games-item-preview" style="background-image: url(img/game-3.jpeg);"></div>
+                        <div class="games-btn">KIM WALL</div>
+                    </object>
+                </a>
+            </div>
+        </div>
+        <div class="games-bg-bot"></div>
+    </div>
+
+    <!--PARTNERS-->
+
+    <!-- <div class="partners row">
+        <div class="partners-inner">
+            <div class="container">
+                <div class="partners-title">OUR PARTHNERS</div>
+                <div class="partners-list">
+                    <img src="img/apple.png" alt="">
+                    <img src="img/apple.png" alt="">
+                    <img src="img/apple.png" alt="">
+                    <img src="img/apple.png" alt="">
+                    <img src="img/apple.png" alt="">
+                    <img src="img/apple.png" alt="">
+                    <img src="img/apple.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--FOOTER-->
+
+    <div class="footer row">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-bg-top"></div>
+                <div class="footer-logo"><img src="img/footer-logo.png" alt=""></div>
+                <div class="footer-bg-bot"></div>
+            </div>
+            <div class="footer-bot">
+                <div class="footer-menu">
+                    <a href="#about" class="footer-menu-item anim_to">About</a>
+                    <a href="#dao" class="footer-menu-item amin_to">DAO</a>
+                    <a href="#road-map" class="footer-menu-item anim_to">Road Map</a>
+                    <a href="#marketplace" class="footer-menu-item anim_to">Market</a>
+                    <a href="#games" class="footer-menu-item anim_to">Games</a>
+                    <a href="#whitepaper" class="footer-menu-item" data-fancybox>WhitePaper</a>
+                    <a href="#staking" class="footer-menu-item anim_to">Staking</a>
+                    <a href="token/" class="footer-menu-item">BuyToken</a>
+					<!--<a href="#comming-soon" class="footer-menu-item" data-fancybox>BuyToken</a>-->
+                </div>
+                <div class="footer-soc">
+                    <a class="footer-soc-item" href="https://discord.gg/7y2C3P7Jny" target="_blank"><img src="img/footer-soc-icon-1.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://instagram.com/Logarithm.Games" target="_blank"><img src="img/footer-soc-icon-2.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://twitter.com/LogarithmGames" target="_blank"><img src="img/footer-soc-icon-3.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://www.youtube.com/channel/UCORrjgc80PvLjYdavKB7Ktw" target="_blank"><img src="img/footer-soc-icon-4.png" alt=""></a>
+                    <a class="footer-soc-item" href="https://facebook.com/profile.php?id=100086565892152" target="_blank"><img src="img/footer-soc-icon-5.png" alt=""></a>
+                </div>
+                <div class="footer-copy">© 2023 LOGARITHM PTE. LTD. Singapore.  All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="connect-popup">
+        <a class="connect-popup-item connect_mm">
+            <span>MetaMask</span>
+            <img src="img/metamask.svg" alt="">
+        </a>
+        <a class="connect-popup-item connect_cw">
+            <span>WalletConnect</span>
+    
+            <img src="img/walletconnect.svg" alt="">
+        </a>
+        <a class="connect-popup-item inactive">
+            <span>WalletLink</span>
+            <img src="img/coinbase.svg" alt="">
+        </a>
+        <a href="https://metamask.io/download/" class="dont-wallet">Don't have a wallet?</a>
+    </div>
+
+    <div id="whitepaper" class="whitepaper">
+        <div class="whitepaper-wrap">
+            <div class="whitepaper-inner">
+                <div class="whitepaper-title">White Paper</div>
+                <div class="whitepaper-items">
+                    <a href="https://logarithm.games/whitepaper_en.pdf" class="whitepaper-item" target="_blank" download>ENG</a>
+                    <a href="https://logarithm.games/whitepaper_es.pdf" class="whitepaper-item" target="_blank" download>ESP</a>
+                    <a href="https://logarithm.games/whitepaper_cn.pdf" class="whitepaper-item" target="_blank" download>CHN</a>
+                    <a href="https://logarithm.games/whitepaper_ru.pdf" class="whitepaper-item" target="_blank" download>RUS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comming-soon" class="comming-soon pop-up whitepaper">
+        <div class="whitepaper-wrap comming-soon-wrap">
+            <div class="whitepaper-inner">
+                <div class="whitepaper-title">Comming Soon<br><span>Keep in touch. We’ll let you know when it arrives.</span></div>
+            </div>
+            <div class="pop-up-form-wrap">
+                <form action="/mail.php" method="POST" class="pop-up-form" id="cb-form">
+                    <div class="pop-up-form-item">
+                        <input type="email" name="email" placeholder="E-mail" class="pop-up-form-input">
+                    </div>
+                    <div class="pop-up-form-btn-wrap">
+                        <div class="pop-up-form-btn-inner">
+                            <button type="submit" class="pop-up-form-btn">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="thanx" class="thanx">
+            <svg viewBox="0 0 100 100" class="animate">
+                      <filter id="dropshadow" height="100%">
+                        <!--<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>-->
+                        <!--<feFlood flood-color="#C0646C" flood-opacity="0.5" result="color"/>-->
+                        <!--<feComposite in="color" in2="blur" operator="in" result="blur"/>-->
+                        <feMerge> 
+                          <feMergeNode></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                      </filter>
+                      <circle cx="50" cy="50" r="46.5" fill="none" stroke="rgba(0, 128, 0, 0.5)" stroke-width="5"></circle>
+                      <path d="M67,93 A46.5,46.5 0,1,0 7,32 L43,67 L88,19" fill="none" stroke="green" stroke-width="5" stroke-linecap="round" stroke-dasharray="80 1000" stroke-dashoffset="-220" style="filter:url(#dropshadow)"></path>
+            </svg>
+            <div class="thanx-text">Thanks!</div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/app.js"></script>
+        <script src="js/newsm.js"></script>
+
+</body>
+
+</html>
