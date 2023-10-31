@@ -276,7 +276,7 @@
         </div>
     </div>
 
-    <div id="errormodal" class="errormodal-div">
+    <div id="errormodal" class="errormodal-div errormodal-display">
         <div class="errormodal">
             <div class="errormodal-wrap">
                 <div class="errormodal-inner">
@@ -310,7 +310,7 @@
 
         $(document).ready(function () {
             $("#errormodalBtn").click(function () {
-                $("#errormodal").removeClass('errormodal-display');
+                $("#errormodal").addClass('errormodal-display');
             });
         });
 
