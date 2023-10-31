@@ -682,7 +682,6 @@ class SC {
 					$(document).ready(function () {
                					$("#errormodal").removeClass('errormodal-display');
         				});
-					alert(err)
 				}
 			} else {
 				await SC.connectToContract()
