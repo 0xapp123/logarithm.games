@@ -91,7 +91,7 @@
         <div class="container">
             <div class="header-numbers">
                 <div class="header-numbers-item"><div id="count" class="countdownHolder">
-                        <span id='date' class="countDays countWrap">
+                        <span id='remainingDays' class="countDays countWrap">
 <!--                             <span class="position">
                                 <span class="digit static">1</span>
                             </span>
@@ -726,7 +726,7 @@
 	  var remainingDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 	
 	  // Display the remaining days
-	  $('#date').text(remainingDays);
+	  $('#remainingDays').text(remainingDays);
 	});
 
         $(document).ready(function () {
