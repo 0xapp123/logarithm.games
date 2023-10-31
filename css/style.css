@@ -945,6 +945,7 @@ canvas {
     font-size: 65px;
     font-weight: 700;
     position: relative;
+    cursor:pointer;
     display: flex;
     background-image: url(../img/dao-btn-bg.png);
     background-repeat: no-repeat;
@@ -1908,6 +1909,41 @@ canvas {
     background-size: contain;
 }
 
+.dao-active-div{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.dao-active-display{
+    display: none !important;
+}
+
+.dao-modal {
+    display: block;
+    position : relative;
+    background-image: url(../img/connect-form-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 60;
+    min-width: 280px;
+    width: 350px;
+    min-height: 190px;
+    height: 280px;
+}
+
+.dao-modal-action{
+    display: block !important;
+}
+
 .whitepaper-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -1918,7 +1954,23 @@ canvas {
     height: 190px;
 }
 
+.dao-modal-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /*padding: 45px 60px;*/
+    min-width: 280px;
+    width: 350px;
+    min-height: 190px;
+    height: 250px;
+}
+
 .whitepaper-inner {
+
+}
+
+.dao-modal-inner {
 
 }
 
@@ -1927,6 +1979,19 @@ canvas {
     font-weight: 600;
     width: 100%;
     text-align: center;
+}
+
+.dao-modal-title {
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 98%;
+    text-align: center;
+}
+
+.dao-cancel{
+    position:absolute;
+    right: 0;
 }
 
 .whitepaper-items {
@@ -1949,6 +2014,10 @@ canvas {
 }
 
 .whitepaper-title span {
+    font-size: 11.5px;
+}
+
+.dao-modal-title span {
     font-size: 11.5px;
 }
 
@@ -1985,10 +2054,28 @@ canvas {
 .pop-up-form-input::-ms-input-placeholder { color: #707070; font-size: 20px;}
 .pop-up-form-input::placeholder { color: #707070; font-size: 20px;} 
 
+
+.dao-input {
+    font-family: 'Inter';
+    width: 200px;
+    font-size: 24px;
+    height: 38px;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 10px 0px rgb(0 0 0 / 50%);
+    padding-left: 15px;
+}
+
+.dao-input::-webkit-input-placeholder { color: #707070; font-size: 20px;}
+.dao-input:-ms-input-placeholder { color: #707070; font-size: 20px;}
+.dao-input::-ms-input-placeholder { color: #707070; font-size: 20px;}
+.dao-input::placeholder { color: #707070; font-size: 20px;} 
+
 .pop-up-form-btn-wrap {
     display: flex;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
 .pop-up-form-btn-inner {
