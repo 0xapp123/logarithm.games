@@ -888,7 +888,7 @@ h1 {
     background-image: url(../img/connect-form-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 999;
+    z-index: 60;
     width: 250px;
     height: 190px;
 }
@@ -936,50 +936,12 @@ h1 {
 .errormodal-title {
     font-size: 28px;
     width: 230px;
-    padding: 4px 0;
+    padding: 4px 10px;
     text-align: center;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
 .errormodal-title-sm{
-    font-size: 14px;
+    font-size: 16px;
     width: 230px;
     padding: 4px 10px;
     text-align: center;
@@ -1051,7 +1013,7 @@ h1 {
 }
 
 .comming-soon .whitepaper-title span {
-    font-size: 11.5px;
+    font-size: 19.5px;
     display: block;
     line-height: 14px;
     margin-top: 7px;
