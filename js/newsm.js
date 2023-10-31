@@ -665,6 +665,7 @@ class SC {
 		if (window.w3) {
 			console.log('w3', w3);
 			if (contract) {
+				try{
 				let price = await contract.methods.getPrice().call();
 				let dropcount = await contract.methods.getDropCount().call();
 				let count = $('#log-token')[0].value;
@@ -677,6 +678,9 @@ class SC {
 				console.log('value', count);
 				console.log('dropcount', dropcount);
 				return await contract.methods.buy().send({ from: account, value: price * count, gas: gas });
+				} catch(err){
+					alert(err)
+				}
 			} else {
 				await SC.connectToContract()
 				SC.buyToken()
