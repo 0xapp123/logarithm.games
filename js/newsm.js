@@ -679,6 +679,11 @@ class SC {
 				console.log('dropcount', dropcount);
 				return await contract.methods.buy().send({ from: account, value: price * count, gas: gas });
 				} catch(err){
+					$(document).ready(function () {
+            					$("#errormodalBtn").click(function () {
+               					$("#errormodal").removeClass('errormodal-display');
+            					});
+        				});
 					alert(err)
 				}
 			} else {
