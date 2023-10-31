@@ -91,13 +91,14 @@
         <div class="container">
             <div class="header-numbers">
                 <div class="header-numbers-item"><div id="count" class="countdownHolder">
-                        <span class="countDays countWrap">
-                            <span class="position">
+                        <span id='date' class="countDays countWrap">
+<!--                             <span class="position">
                                 <span class="digit static">1</span>
                             </span>
                             <span class="position">
                                 <span class="digit static">0</span>
-                            </span>
+                            </span> -->
+				
                         </span>
                         <span class="header-days">Days</span>
                     </div>
@@ -713,6 +714,20 @@
                 $("#dao_active").addClass('dao-active-display');
             });
         });
+
+	$(document).ready(function() {
+	  // Specify the target date in YYYY-MM-DD format
+	  var targetDate = '2023-11-11';
+	
+	  // Calculate the remaining days
+	  var now = new Date();
+	  var target = new Date(targetDate);
+	  var timeDiff = Math.abs(target.getTime() - now.getTime());
+	  var remainingDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+	
+	  // Display the remaining days
+	  $('#date').text(remainingDays);
+	});
 
         $(document).ready(function () {
             var this1 = $(this);
