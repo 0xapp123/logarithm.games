@@ -1694,6 +1694,13 @@ canvas {
     margin-top: 30px;
 }
 
+.games-inner-b {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
 .games-item {
     position: relative;
     display: flex;
@@ -2789,6 +2796,10 @@ canvas {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .games-inner-b {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .games-item {
         margin: 0 20px 40px;
     }
@@ -3190,6 +3201,9 @@ canvas {
         display: none;
     }
     .games-inner {
+        margin-top: 60px;
+    }
+    .games-inner-b {
         margin-top: 60px;
     }
     .games-item-preview {
