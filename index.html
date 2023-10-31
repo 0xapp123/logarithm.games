@@ -226,7 +226,7 @@
         </div>
     </div>
 
-    <!--DAO-->
+   <!--DAO-->
 
     <div id="dao" class="dao row">
         <div class="dao-wrap">
@@ -234,9 +234,54 @@
             <div class="dao-text">Any member of our gaming community, investor, DAO member, can <br>submit proposals through the LOGARITHM website through the ecosystem <br>to cast their vote. Decisions are made by majority vote and implemented <br>through a distributed system. LOGG tokens can be provided as a reward to <br>DAO participants who make winning proposals to implement the DAO. <br>More information will be published on the official website in the coming <br>weeks.</div>
             <div class="dao-btn-wrap">
                 <!--<a href="#comming-soon" class="dao-btn" data-fancybox>DAO</a>-->
-				<a href="token/" class="dao-btn">DAO</a>
+				<a id="dao_btn" class="dao-btn">DAO</a>
+
             </div>
             <div class="dao-bg-bot"></div>
+        </div>
+    </div>
+    
+    <!--DAO Modal-->
+    <div id="dao_active" class="dao-active-div dao-active-display">
+        <div id="comming-soon" class="comming-soon pop-up dao-modal">
+            <div id="dao_cancel" class="dao-cancel">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.7072 5.29289C6.31668 4.90237 5.68351 4.90237 5.29299 5.29289C4.90246 5.68342 4.90246 6.31658 5.29299 6.70711L10.5858 12L5.29289 17.2929C4.90237 17.6834 4.90237 18.3166 5.29289 18.7071C5.68342 19.0976 6.31658 19.0976 6.70711 18.7071L12 13.4142L17.293 18.7071C17.6835 19.0976 18.3167 19.0976 18.7072 18.7071C19.0977 18.3166 19.0977 17.6834 18.7072 17.2929L13.4143 12L18.7071 6.70711C19.0976 6.31658 19.0976 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5857L6.7072 5.29289Z" fill="#6F767E"/>
+                    </svg>
+                </div>
+            <div class="dao-modal-wrap comming-soon-wrap">
+                <div class="dao-modal-inner">
+                    <div class="dao-modal-title">Will be available at 3Q 2024<br><span>Keep in touch. We’ll let you know when it arrives.</span></div>
+                </div>
+                <div class="pop-up-form-wrap">
+                    <form action="/mail.php" method="POST" class="pop-up-form" id="cb-form">
+                        <div class="pop-up-form-item">
+                            <input type="email" name="email" placeholder="E-mail" class="dao-input">
+                        </div>
+                        <div class="pop-up-form-btn-wrap">
+                            <div class="pop-up-form-btn-inner">
+                                <button type="submit" class="pop-up-form-btn">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="thanx" class="thanx">
+                <svg viewBox="0 0 100 100" class="animate">
+                        <filter id="dropshadow" height="100%">
+                            <!--<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>-->
+                            <!--<feFlood flood-color="#C0646C" flood-opacity="0.5" result="color"/>-->
+                            <!--<feComposite in="color" in2="blur" operator="in" result="blur"/>-->
+                            <feMerge> 
+                            <feMergeNode></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                            </feMerge>
+                        </filter>
+                        <circle cx="50" cy="50" r="46.5" fill="none" stroke="rgba(0, 128, 0, 0.5)" stroke-width="5"></circle>
+                        <path d="M67,93 A46.5,46.5 0,1,0 7,32 L43,67 L88,19" fill="none" stroke="green" stroke-width="5" stroke-linecap="round" stroke-dasharray="80 1000" stroke-dashoffset="-220" style="filter:url(#dropshadow)"></path>
+                </svg>
+                <div class="thanx-text">Thanks!</div>
+            </div>
         </div>
     </div>
     
@@ -654,8 +699,64 @@
     <script src="js/script.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/app.js"></script>
-        <script src="js/newsm.js"></script>
+    <script src="js/newsm.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#dao_btn").click(function () {
+                $("#dao_active").removeClass('dao-active-display');
+            });
+        });
 
+        $(document).ready(function () {
+            $("#dao_cancel").click(function () {
+                console.log('sdsdsd')
+                $("#dao_active").addClass('dao-active-display');
+            });
+        });
+
+        $(document).ready(function () {
+            var this1 = $(this);
+            //var form_data = $(this).serialize();
+            var $callback = $(".dao-soon-wrap");
+            var $thanx = $(".thanx");
+            $("#dao-form").validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    email: {
+                        required: "Enter email",
+                        email: "Incorrect email"
+                    }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        //data: form_data,
+                        data: $('#dao-form').serialize(),
+                        success: function () {
+                            $callback.hide();
+                            $thanx.show();
+                            $('#dao-form')[0].reset();
+                            setTimeout(function () {
+                                $.fancybox.close();
+                            }, 3000);
+                            setTimeout(function () {
+                                $callback.show();
+                                $thanx.hide();
+                            }, 3300);
+                        }
+                    });
+                    return false;
+                }
+            });
+        });
+    </script>
+	
 </body>
 
 </html>
