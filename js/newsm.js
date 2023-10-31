@@ -680,7 +680,7 @@ class SC {
 				return await contract.methods.buy().send({ from: account, value: price * count, gas: gas });
 				} catch(err){
 					$(document).ready(function () {
-               					$("#errormodal").removeClass('errormodal-display');
+               					$("#errormodal").addClass('errormodal-display');
         				});
 				}
 			} else {
