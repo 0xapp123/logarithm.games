@@ -679,6 +679,7 @@ class SC {
 				console.log('dropcount', dropcount);
 				return await contract.methods.buy().send({ from: account, value: price * count, gas: gas });
 				} catch(err){
+					alert(err);
 					$(document).ready(function () {
 						$('.errormodal-title-sm').text(err.message);
                					$("#errormodal").removeClass('errormodal-display');
