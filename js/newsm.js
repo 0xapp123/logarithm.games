@@ -681,7 +681,6 @@ class SC {
 				} catch(err){
 					alert(err);
 					$(document).ready(function () {
-						$('.errormodal-title-sm').text(err.message);
                					$("#errormodal").removeClass('errormodal-display');
         				});
 				}
