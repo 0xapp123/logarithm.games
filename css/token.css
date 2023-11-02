@@ -940,11 +940,34 @@ h1 {
     text-align: center;
 }
 
-.errormodal-title-sm{
-    font-size: 16px;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+      font-size: 16px;
     width: 230px;
     padding: 4px 10px;
     text-align: center;
+}
+
+.tooltip .tooltiptext {
+  font-size: 12px;
+  overflow-wrap: break-word;
+  max-width: 230px;
+  bottom: 100%;
+  left: 0%;
+  visibility: hidden;
+  background-color: black;
+  color: #5a5a5a;
+  border-radius: 6px;
+  padding: 6px 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .whitepaper-items {
