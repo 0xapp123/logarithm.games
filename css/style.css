@@ -412,6 +412,7 @@ h1 {
 
 #count .countWrap {
     display: flex;
+    font-size: 24px;
 }
 
 #count.countdownHolder {
@@ -945,7 +946,7 @@ canvas {
     font-size: 65px;
     font-weight: 700;
     position: relative;
-    cursor: pointer;
+    cursor:pointer;
     display: flex;
     background-image: url(../img/dao-btn-bg.png);
     background-repeat: no-repeat;
@@ -1695,6 +1696,13 @@ canvas {
     margin-top: 30px;
 }
 
+.games-inner-b {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
 .games-item {
     position: relative;
     display: flex;
@@ -1902,14 +1910,39 @@ canvas {
     background-size: contain;
 }
 
-.errormodal {
-    display: black;
-    background: none;
-    width: 280px;
-    height: 190px;
+.dao-active-div{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.dao-active-display{
+    display: none !important;
+}
+
+.dao-modal {
+    display: block;
+    position : relative;
     background-image: url(../img/connect-form-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 60;
+    min-width: 280px;
+    width: 350px;
+    min-height: 190px;
+    height: 280px;
+}
+
+.dao-modal-action{
+    display: block !important;
 }
 
 .whitepaper-wrap {
@@ -1922,21 +1955,23 @@ canvas {
     height: 190px;
 }
 
-.errormodal-wrap {
+.dao-modal-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     /*padding: 45px 60px;*/
-    width: 280px;
-    height: 190px;
+    min-width: 280px;
+    width: 350px;
+    min-height: 190px;
+    height: 250px;
 }
 
 .whitepaper-inner {
 
 }
 
-.errormodal-inner {
+.dao-modal-inner {
 
 }
 
@@ -1947,11 +1982,18 @@ canvas {
     text-align: center;
 }
 
-.errormodal-title {
-    font-size: 32px;
+.dao-modal-title {
+    padding-top: 15px;
+    font-size: 24px;
     font-weight: 600;
-    width: 100%;
+    width: 98%;
     text-align: center;
+}
+
+.dao-cancel{
+    cursor : pointer;
+    position:absolute;
+    right: 0;
 }
 
 .whitepaper-items {
@@ -1974,6 +2016,10 @@ canvas {
 }
 
 .whitepaper-title span {
+    font-size: 11.5px;
+}
+
+.dao-modal-title span {
     font-size: 11.5px;
 }
 
@@ -2010,10 +2056,28 @@ canvas {
 .pop-up-form-input::-ms-input-placeholder { color: #707070; font-size: 20px;}
 .pop-up-form-input::placeholder { color: #707070; font-size: 20px;} 
 
+
+.dao-input {
+    font-family: 'Inter';
+    width: 200px;
+    font-size: 24px;
+    height: 38px;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 10px 0px rgb(0 0 0 / 50%);
+    padding-left: 15px;
+}
+
+.dao-input::-webkit-input-placeholder { color: #707070; font-size: 20px;}
+.dao-input:-ms-input-placeholder { color: #707070; font-size: 20px;}
+.dao-input::-ms-input-placeholder { color: #707070; font-size: 20px;}
+.dao-input::placeholder { color: #707070; font-size: 20px;} 
+
 .pop-up-form-btn-wrap {
     display: flex;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
 .pop-up-form-btn-inner {
@@ -2821,6 +2885,10 @@ canvas {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .games-inner-b {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .games-item {
         margin: 0 20px 40px;
     }
@@ -3222,6 +3290,9 @@ canvas {
         display: none;
     }
     .games-inner {
+        margin-top: 60px;
+    }
+    .games-inner-b {
         margin-top: 60px;
     }
     .games-item-preview {
