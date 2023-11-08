@@ -945,6 +945,7 @@ canvas {
     font-size: 65px;
     font-weight: 700;
     position: relative;
+    cursor: pointer;
     display: flex;
     background-image: url(../img/dao-btn-bg.png);
     background-repeat: no-repeat;
