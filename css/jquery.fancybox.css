@@ -387,7 +387,6 @@ body.compensate-for-scrollbar {
 /* Close button on the top right corner of html content */
 
 .fancybox-close-small {
-    display: none;
     background: transparent;
     border: 0;
     border-radius: 0;
