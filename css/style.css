@@ -1904,10 +1904,15 @@ canvas {
 .whitepaper {
     display: none;
     background: none;
+    position:relative;
+    margin-top: 5px;
     background-image: url(../img/connect-form-bg.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-repeat: round;
     background-size: contain;
+    min-width: 280px;
+    width: 350px;
+    min-height: 190px;
+    height: 250px;
 }
 
 .dao-active-div{
@@ -1951,8 +1956,10 @@ canvas {
     align-items: center;
     justify-content: center;
     /*padding: 45px 60px;*/
-    width: 280px;
-    height: 190px;
+    min-width: 280px;
+    width: 350px;
+    min-height: 190px;
+    height: 250px;
 }
 
 .dao-modal-wrap {
